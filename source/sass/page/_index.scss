@@ -1,0 +1,169 @@
+@import '../component/grid';
+@import '../helpers/variables';
+@import '../component/utilities';
+
+.hero-img{
+    background-image: url("https://bit.ly/2OhbMHr");
+    height: 496px;
+}
+
+.hot{
+    margin-top: -90px;
+    .hot-wrap{
+        height: 256px;
+        cursor: pointer;
+        position: relative;
+        z-index: 3;
+        overflow: hidden;
+       
+    
+        .hot-item-1{
+            background-image: url("https://bit.ly/2QiWeQW");
+            height: 256px;
+        }
+        
+        .hot-item-2{     
+            background-image: url("https://bit.ly/2Dwoxd7");
+            height: 256px;
+            filter: blur(5px);
+
+        }
+        
+        .hot-item-3{
+            background-image: url("https://bit.ly/2OUteif");   
+            height: 256px;
+            filter: blur(5px);
+        }
+    }
+    .hot-item{
+        height: 256px;
+        position: absolute;
+        right: -10px;
+        bottom: -10px;
+        left: -10px;
+        top: -10px;
+        z-index: 1;
+        color: #fff;
+        transition: filter .5s;
+        &:hover{
+            color: $primary;
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            background-color: rgba(63, 93, 69, 0.8);
+            transition: background-color .5s;
+            z-index: 2;
+        }
+        &.active::after,
+        &:hover::after,
+        &:focus::after {
+            background-color: rgba(255, 225, 128, 0.8);
+            color: #000;
+        }   
+        &.active .hot-img,
+        &:hover .hot-img,
+        &:focus .hot-img {
+            filter: blur(0);
+        }
+    }
+}
+
+.hot-font{
+    cursor: pointer;
+    position: absolute;
+    top: 30%;
+    left: 48%;
+    font-size: 24px;
+    writing-mode: vertical-rl;
+    z-index: 3;
+}
+
+
+.sectionMake{
+    .section-title-img1{
+        background-image: url("../../img/sm-橫式-為什麼選擇了做甜點.svg");
+        width: 194px;
+        height: 60px;
+     }
+     .sectionMake-img1{
+        background-image: url("https://bit.ly/2xPn7Eq");
+        height: 460px;
+    }
+    .content-title-img1{
+        width: 88px;
+        height: 304px;
+        @include pad(){
+            display: none;
+        }
+    }
+}
+
+.section-text{
+    writing-mode: vertical-rl;
+    line-height:40px; 
+    @include pad-Pro(){
+        line-height: 30px;
+    }
+    @include pad(){
+        writing-mode: horizontal-tb;
+    }
+}
+.sectionEat{
+    .section-title-img2{
+        width: 194px;
+        height: 60px;
+
+     }
+     .content-title-img2{
+         width: 88px;
+         height: 304px;
+         @include pad(){
+            display: none;
+        }
+     }
+     .sectionEat-content-img2{
+         background-image: url("https://bit.ly/2zzAQS4");
+         height: 460px;
+        
+     }
+     .sectionEat-img{
+        @include pad(){
+            display: none;
+        }
+     }
+}
+.sectionWant{
+    .section-title-img3{
+        width: 89px;
+        height: 327px;
+        @include pad(){
+            display: none;
+        }
+    }
+}
+.menu{
+    .card-img1{
+        background-image: url("https://bit.ly/2zBjQuq");
+    } 
+    .card-img2{
+        background-image: url("https://bit.ly/2zBDAxX");
+    }
+    .card-img3{
+        background-image: url("https://bit.ly/2QbVsVR");
+    }
+    .card-footer{
+        background-color: $lightGreen;
+    }
+}
+.subscribeText{
+    font-size: 24px;
+}
+
+
+
+
