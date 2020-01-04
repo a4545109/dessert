@@ -15744,7 +15744,7 @@ a.text-white:hover, a.text-white:focus {
   }
 }
 
-section {
+body {
   color: #8DA291;
 }
 
@@ -15755,71 +15755,18 @@ section {
   }
 }
 
-footer {
+.footer {
   color: #3F5D45;
 }
 
 @media screen and (max-width: 767px) {
-  footer .goodday-img {
+  .footer .goodday-img {
     display: none;
   }
 }
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
 .bg-cover {
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
@@ -15948,6 +15895,7 @@ table {
 }
 
 .bg-cover {
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
@@ -16076,12 +16024,15 @@ table {
 }
 
 .hero-img {
-  background-image: url("https://bit.ly/2OhbMHr");
   height: 496px;
 }
 
 .hot {
   margin-top: -90px;
+}
+
+.hot .hot-img {
+  height: 256px;
 }
 
 .hot .hot-wrap {
@@ -16092,32 +16043,26 @@ table {
   overflow: hidden;
 }
 
-.hot .hot-wrap .hot-item-1 {
-  background-image: url("https://bit.ly/2QiWeQW");
-  height: 256px;
-}
-
-.hot .hot-wrap .hot-item-2 {
-  background-image: url("https://bit.ly/2Dwoxd7");
-  height: 256px;
-  -webkit-filter: blur(5px);
-          filter: blur(5px);
-}
-
-.hot .hot-wrap .hot-item-3 {
-  background-image: url("https://bit.ly/2OUteif");
-  height: 256px;
-  -webkit-filter: blur(5px);
-          filter: blur(5px);
-}
-
-.hot .hot-item {
-  height: 256px;
+.hot .hot-wrap .hot-yellow::after {
+  content: "";
   position: absolute;
-  right: -10px;
-  bottom: -10px;
-  left: -10px;
-  top: -10px;
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+  background-color: #FFE180;
+  opacity: 0.5;
+  -webkit-transition: background-color .5s;
+  transition: background-color .5s;
+  z-index: 2;
+}
+
+.hot .hot-wrap .hot-item {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  top: 0px;
   z-index: 1;
   color: #fff;
   -webkit-transition: -webkit-filter .5s;
@@ -16126,33 +16071,38 @@ table {
   transition: filter .5s, -webkit-filter .5s;
 }
 
-.hot .hot-item:hover {
+.hot .hot-wrap .hot-item:hover {
   color: #3F5D45;
 }
 
-.hot .hot-item::after {
+.hot .hot-wrap .hot-item::after {
   content: "";
   position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
   background-color: rgba(63, 93, 69, 0.8);
   -webkit-transition: background-color .5s;
   transition: background-color .5s;
   z-index: 2;
 }
 
-.hot .hot-item.active::after, .hot .hot-item:hover::after, .hot .hot-item:focus::after {
+.hot .hot-wrap .hot-item.active::after, .hot .hot-wrap .hot-item:hover::after, .hot .hot-wrap .hot-item:focus::after {
   background-color: rgba(255, 225, 128, 0.8);
   color: #000;
 }
 
-.hot .hot-item.active .hot-img,
-.hot .hot-item:hover .hot-img,
-.hot .hot-item:focus .hot-img {
+.hot .hot-wrap .hot-item.active .hot-blur,
+.hot .hot-wrap .hot-item:hover .hot-blur,
+.hot .hot-wrap .hot-item:focus .hot-blur {
   -webkit-filter: blur(0);
           filter: blur(0);
+}
+
+.hot .hot-wrap .hot-blur {
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
 }
 
 .hot-font {
@@ -16167,24 +16117,22 @@ table {
   z-index: 3;
 }
 
-.sectionMake .section-title-img1 {
-  background-image: url("../../img/sm-橫式-為什麼選擇了做甜點.svg");
-  width: 194px;
+.sectionMake .sectionMake-title {
+  width: 196px;
   height: 60px;
 }
 
-.sectionMake .sectionMake-img1 {
-  background-image: url("https://bit.ly/2xPn7Eq");
+.sectionMake .sectionMake-img {
   height: 460px;
 }
 
-.sectionMake .content-title-img1 {
+.sectionMake .sectionMake-content-title {
   width: 88px;
   height: 304px;
 }
 
 @media screen and (max-width: 767px) {
-  .sectionMake .content-title-img1 {
+  .sectionMake .sectionMake-content-title {
     display: none;
   }
 }
@@ -16210,25 +16158,25 @@ table {
   }
 }
 
-.sectionEat .section-title-img2 {
-  width: 194px;
+.sectionEat .sectionEat-title {
+  width: 196px;
   height: 60px;
 }
 
-.sectionEat .content-title-img2 {
+.sectionEat .sectionEat-img-up,
+.sectionEat .sectionEat-img-bottom {
+  height: 460px;
+}
+
+.sectionEat .sectionEat-content-title {
   width: 88px;
   height: 304px;
 }
 
 @media screen and (max-width: 767px) {
-  .sectionEat .content-title-img2 {
+  .sectionEat .sectionEat-content-title {
     display: none;
   }
-}
-
-.sectionEat .sectionEat-content-img2 {
-  background-image: url("https://bit.ly/2zzAQS4");
-  height: 460px;
 }
 
 @media screen and (max-width: 767px) {
@@ -16248,19 +16196,7 @@ table {
   }
 }
 
-.menu .card-img1 {
-  background-image: url("https://bit.ly/2zBjQuq");
-}
-
-.menu .card-img2 {
-  background-image: url("https://bit.ly/2zBDAxX");
-}
-
-.menu .card-img3 {
-  background-image: url("https://bit.ly/2QbVsVR");
-}
-
-.menu .card-footer {
+.card-footer {
   background-color: #EAF0ED;
 }
 
@@ -16273,7 +16209,6 @@ table {
 }
 
 .hero .p-hero-img {
-  background-image: url("https://bit.ly/2Qodh3Z");
   height: 496px;
 }
 
@@ -16368,23 +16303,8 @@ table {
 }
 
 .cart-img {
-  width: 100%;
+  width: 95%;
   min-height: 106px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-
-.cart-img-1 {
-  background-image: url(https://bit.ly/2QvsT63);
-}
-
-.cart-img-2 {
-  background-image: url(https://bit.ly/2zBDAxX);
-}
-
-.cart-img-3 {
-  background-image: url(https://bit.ly/2zKOP7w);
 }
 
 @media screen and (max-width: 767px) {
@@ -16408,10 +16328,9 @@ table {
   font-size: 20px;
 }
 
-.header-main-image-success {
+.header-image {
   width: 100%;
   height: 460px;
-  background-image: url("https://bit.ly/2P7GhNd");
 }
 
 .setp {
@@ -16461,6 +16380,7 @@ table {
 }
 
 .bg-cover {
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }

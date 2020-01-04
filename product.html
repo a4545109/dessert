@@ -34,7 +34,7 @@
                         <a class="nav-link" href="index.html">首頁 <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="product.html">甜點</a>
+                        <a class="nav-link active" href="product.html">甜點</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="login.html">登入</a>
@@ -44,15 +44,15 @@
         </div>
     </nav>
 
-    <div class="container">
+    <div class="container-fluid">
         <div class="hero">
             <img class="p-hero-title-img" src="source/img/lg-想吃甜點是不需要理由的.svg" style="width: 89px;" alt="">
-            <div class="p-hero-img bg-cover"></div>
+            <div class="p-hero-img bg-cover" style="background-image: url(https://bit.ly/2Qodh3Z);"></div>
         </div>
 
     </div>
 
-    <div class="container mt-8">
+    <div class="container-fluid mt-8">
         <div class="row">
             <div class="col-md-4">
                 <div class="p-list list-group text-center sticky-top mb-5" id="myList" role="tablist">
@@ -74,8 +74,8 @@
                 <div class="tab-content">
                     <div class="tab-pane active menu" id="pane-1">
                         <div class="row">
-                            <div class="col-md-6">
-                                <div class="card ml-md-4 border-0">
+                            <div class="col-md-6 mb-4">
+                                <div class="card border-0">
                                     <div class="p-card-img p-card-img1 bg-cover">
                                         <div class="popular">本日精選</div>
                                         <label class="icon-item">
@@ -96,8 +96,8 @@
                                             class="h4 mb-0">加入購物車</span></a>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="card mt-md-0 mt-4 ml-md-4 border-0">
+                            <div class="col-md-6 mb-4">
+                                <div class="card border-0">
                                     <div class="p-card-img p-card-img2 bg-cover">
                                         <div class="popular">本日精選</div>
                                         <label class="icon-item">
@@ -118,8 +118,8 @@
                                             class="h4 mb-0">加入購物車</span></a>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="card mt-4 ml-md-4 border-0">
+                            <div class="col-md-6 mb-4">
+                                <div class="card border-0">
                                     <div class="p-card-img p-card-img3 bg-cover">
                                         <div class="popular">本日精選</div>
                                         <label class="icon-item">
@@ -140,8 +140,8 @@
                                             class="h4 mb-0">加入購物車</span></a>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="card mt-4 ml-md-4 border-0">
+                            <div class="col-md-6 mb-4">
+                                <div class="card border-0">
                                     <div class="p-card-img p-card-img4 bg-cover">
                                         <div class="popular">本日精選</div>
                                         <label class="icon-item">
@@ -162,8 +162,8 @@
                                             class="h4 mb-0">加入購物車</span></a>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="card mt-4 ml-md-4 border-0">
+                            <div class="col-md-6 mb-4">
+                                <div class="card border-0">
                                     <div class="p-card-img p-card-img5 bg-cover">
                                         <div class="popular">本日精選</div>
                                         <label class="icon-item">
@@ -184,8 +184,8 @@
                                             class="h4 mb-0">加入購物車</span></a>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="card my-4 ml-md-4 border-0">
+                            <div class="col-md-6 mb-4">
+                                <div class="card border-0">
                                     <div class="p-card-img p-card-img6 bg-cover">
                                         <div class="popular">本日精選</div>
                                         <label class="icon-item">
@@ -212,8 +212,8 @@
                     <!-- pane-2-start -->
                     <div class="tab-pane active menu" id="pane-2">
                         <div class="row">
-                            <div class="col-md-6">
-                                <div class="card ml-md-4 border-0">
+                            <div class="col-md-6 mb-4">
+                                <div class="card border-0">
                                     <div class="p-card-img p-card-img3 bg-cover">
                                         <div class="popular">本日精選</div>
                                         <label class="icon-item">
@@ -234,8 +234,8 @@
                                             class="h4 mb-0">加入購物車</span></a>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="card mt-md-0 mt-4 ml-md-4 border-0">
+                            <div class="col-md-6 mb-4">
+                                <div class="card border-0">
                                     <div class="p-card-img p-card-img5 bg-cover">
                                         <div class="popular">本日精選</div>
                                         <label class="icon-item">
@@ -295,10 +295,10 @@
                 <div class="col-md-6">
                     <div class="input-group my-md-6 my-5 px-5">
                         <div class="input-group-prepend">
-                            <span class="input-group-text text-primary bg-white border-0 rounded-0"><i
-                                    class="fas fa-envelope"></i></span>
+                            <label for="subscription" class="input-group-text text-primary bg-white border-0 rounded-0"><i
+                                    class="fas fa-envelope"></i></label>
                         </div>
-                        <input type="text" class="form-control border-0" aria-label="Amount (to the nearest dollar)">
+                        <input type="email" id="subscription" class="form-control border-0" aria-label="Amount (to the nearest dollar)">
                         <div class="input-group-append">
                             <button class="btn btn-accent rounded-0"><i class="fas fa-arrow-right"></i></button>
                         </div>

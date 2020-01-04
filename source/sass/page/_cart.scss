@@ -9,21 +9,8 @@
     font-size: 20px;
 }
 .cart-img{
-    &-1{
-        background-image: url(https://bit.ly/2QvsT63);
-    }
-    &-2{
-        background-image: url(https://bit.ly/2zBDAxX);
-    }
-    &-3{
-        background-image: url(https://bit.ly/2zKOP7w);
-    }
-    width: 100%;
+    width: 95%;
     min-height: 106px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-
     @include pad{
         min-width: 157px;
         min-height: 106px;

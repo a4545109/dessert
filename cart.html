@@ -30,7 +30,7 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="index.html">首頁 <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
@@ -45,19 +45,19 @@
     </nav>
 
     <div class="container-fulid">
-        <div class="row d-flex justify-content-center">
+        <div class="row no-gutters d-flex justify-content-center">
             <div class="col-md-7">
                 <div class="card border-0">
                     <div
                         class="card-header c-order-title bg-lightGreen border-0 text-center text-primary font-weight-bold">
                         您的購物車
                     </div>
-                    <div class="row d-flex align-items-center">
+                    <div class="row no-gutters d-flex align-items-center">
                         <div class="col-lg-3 col-6">
-                            <div class="cart-img cart-img-1 rounded-0 my-5"></div>
+                            <div class="cart-img bg-cover rounded-0 my-5" style="background-image: url('https://bit.ly/2QvsT63');"></div>
                         </div>
                         <div class="col-lg-5 col-6">
-                            <div class="row">
+                            <div class="row no-gutters">
                                 <div class="col-lg-6 mb-2">
                                     <div class="cart-product text-start">
                                         <p class="productName">焦糖馬卡龍</p>
@@ -75,7 +75,7 @@
                         </div>
                         <div class="hr style-one d-lg-none "></div>
                         <div class="col-lg-4">
-                            <div class="row d-flex justify-content-end p-4">
+                            <div class="row no-gutters d-flex justify-content-end p-4">
                                 <p class="productTitle mr-lg-5 font-weight-bold text-primary">NT$ 900</p>
                                 <a href="#removeModal" class="text-muted d-lg-block d-none" data-toggle="modal" data-target="#removeModal"
                                     data-title="焦糖馬卡龍一份" data-backdrop="static">
@@ -85,12 +85,12 @@
                         </div>
                         <div class="hr style-one"></div>
                     </div>
-                    <div class="row d-flex align-items-center">
+                    <div class="row no-gutters d-flex align-items-center">
                         <div class="col-lg-3 col-6">
-                            <div class="cart-img cart-img-2 rounded-0 my-5"></div>
+                            <div class="cart-img bg-cover rounded-0 my-5" style="background-image: url(https://bit.ly/2zBDAxX);"></div>
                         </div>
                         <div class="col-lg-5 col-6">
-                            <div class="row">
+                            <div class="row no-gutters">
                                 <div class="col-lg-6 mb-2">
                                     <div class="cart-product text-start">
                                         <p class="productName">焦糖馬卡龍</p>
@@ -108,7 +108,7 @@
                         </div>
                         <div class="hr style-one d-lg-none "></div>
                         <div class="col-lg-4">
-                            <div class="row d-flex justify-content-end p-4">
+                            <div class="row no-gutters d-flex justify-content-end p-4">
                                 <p class="productTitle mr-lg-5 font-weight-bold text-primary">NT$ 900</p>
                                 <a href="#removeModal" class="text-muted d-lg-block d-none" data-toggle="modal" data-target="#removeModal"
                                     data-title="焦糖馬卡龍一份" data-backdrop="static">
@@ -118,12 +118,12 @@
                         </div>
                         <div class="hr style-one"></div>
                     </div>
-                    <div class="row d-flex align-items-center">
+                    <div class="row no-gutters d-flex align-items-center">
                         <div class="col-lg-3 col-6">
-                            <div class="cart-img cart-img-3 rounded-0 my-5"></div>
+                            <div class="cart-img bg-cover rounded-0 my-5" style="background-image: url(https://bit.ly/2zKOP7w);"></div>
                         </div>
                         <div class="col-lg-5 col-6">
-                            <div class="row">
+                            <div class="row no-gutters">
                                 <div class="col-lg-6 mb-2">
                                     <div class="cart-product text-start">
                                         <p class="productName">焦糖馬卡龍</p>
@@ -141,7 +141,7 @@
                         </div>
                         <div class="hr style-one d-lg-none "></div>
                         <div class="col-lg-4">
-                            <div class="row d-flex justify-content-end p-4">
+                            <div class="row no-gutters d-flex justify-content-end p-4">
                                 <p class="productTitle mr-lg-5 font-weight-bold text-primary">NT$ 900</p>
                                 <a href="#removeModal" class="text-muted d-lg-block d-none" data-toggle="modal" data-target="#removeModal"
                                     data-title="焦糖馬卡龍一份" data-backdrop="static">
@@ -199,10 +199,10 @@
                 <div class="col-md-6">
                     <div class="input-group my-md-6 my-5 px-5">
                         <div class="input-group-prepend">
-                            <span class="input-group-text text-primary bg-white border-0 rounded-0"><i
-                                    class="fas fa-envelope"></i></span>
+                            <label for="subscription" class="input-group-text text-primary bg-white border-0 rounded-0"><i
+                                    class="fas fa-envelope"></i></label>
                         </div>
-                        <input type="text" class="form-control border-0" aria-label="Amount (to the nearest dollar)">
+                        <input type="email" id="subscription" class="form-control border-0" aria-label="Amount (to the nearest dollar)">
                         <div class="input-group-append">
                             <button class="btn btn-accent rounded-0"><i class="fas fa-arrow-right"></i></button>
                         </div>

@@ -30,13 +30,13 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="index.html">首頁 <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="product.html">甜點</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="login.html">登入</a>
                     </li>
                 </ul>
@@ -77,10 +77,10 @@
                                 <div class="card-body">
                                     <div class="input-group my-md-3 my-3 px-2">
                                         <div class="input-group-prepend">
-                                            <span class="input-group-text bg-white border-0 rounded-0"><img
-                                                    src="source/img/user.png" alt=""></span>
+                                            <label for="phone" class="input-group-text bg-white border-0 rounded-0"><img
+                                                    src="source/img/user.png" alt=""></label>
                                         </div>
-                                        <input type="text" class="form-control border-0 rounded-0"
+                                        <input type="text" id="phone" class="form-control border-0 rounded-0"
                                             placeholder="電子信箱/手機號碼" aria-label="Amount (to the nearest dollar)"
                                             required>
                                         <div class="invalid-feedback">
@@ -89,10 +89,10 @@
                                     </div>
                                     <div class="input-group my-md-3 my-3 px-2">
                                         <div class="input-group-prepend">
-                                            <span class="input-group-text bg-white border-0 rounded-0"><img
-                                                    src="source/img/vpn_key.png" alt=""></span>
+                                            <label for="password" class="input-group-text bg-white border-0 rounded-0"><img
+                                                    src="source/img/vpn_key.png" alt=""></label>
                                         </div>
-                                        <input type="text" class="form-control border-0 rounded-0"
+                                        <input type="password" id="password" class="form-control border-0 rounded-0"
                                             placeholder="請輸入使用者密碼" aria-label="Amount (to the nearest dollar)" required>
                                         <div class="invalid-feedback">
                                             請輸入使用者密碼
@@ -105,8 +105,6 @@
                                 </div>
                                 <button class="btn btn-primarybtn btn-accent text-primary btn-block rounded-0"
                                     type="submit">登入帳號</button>
-                                <!-- <a href="javascript:;" class="btn btn-accent text-primary btn-block rounded-0"><span
-                                        class="h4 mb-0">登入帳號</span></a> -->
                             </div>
                         </form>
                     </div>
@@ -154,10 +152,10 @@
                 <div class="col-md-6">
                     <div class="input-group my-md-6 my-5 px-5">
                         <div class="input-group-prepend">
-                            <span class="input-group-text text-primary bg-white border-0 rounded-0"><i
-                                    class="fas fa-envelope"></i></span>
+                            <label for="subscription" class="input-group-text text-primary bg-white border-0 rounded-0"><i
+                                    class="fas fa-envelope"></i></label>
                         </div>
-                        <input type="text" class="form-control border-0" aria-label="Amount (to the nearest dollar)">
+                        <input type="email" id="subscription" class="form-control border-0" aria-label="Amount (to the nearest dollar)">
                         <div class="input-group-append">
                             <button class="btn btn-accent rounded-0"><i class="fas fa-arrow-right"></i></button>
                         </div>

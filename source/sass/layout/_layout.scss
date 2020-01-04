@@ -1,10 +1,8 @@
 @import '../component/grid';
 @import '../helpers/variables';
 
-section{
-    color: $mediumGreen;
-}
 body{
+    color: $mediumGreen;
     @include pad(){
         .protrud{
         margin-top: 0px;
@@ -13,7 +11,7 @@ body{
     }
 }
 
-footer{
+.footer{
     color: $heavyGreen2;
     .goodday-img{
         @include pad(){
