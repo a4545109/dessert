@@ -1,6 +1,13 @@
 .c-order-title{
     font-size: 24px;
 }
+.c-orderSummary{
+    font-size: 24px;
+    @include pad(){
+        background-color: $lightGreen;
+        margin: 20px 100px 0px 100px;
+    }
+}
 .tableimg{
     max-width: 100%;
     height: auto;
@@ -17,13 +24,21 @@
     }
 }
 .productName{
-    color: $heavyGreen2;
+    color: $primary;
     font-size: 20px;
 }
 .productPrice{
-    color: $heavyGreen2;
+    color: $primary;
     font-size: 16px;
 }
 .productTitle{
     font-size: 20px;
+}
+.orderSummary{
+    background-color: $primary;
+    color: $white;
+    @include pad(){
+        background: $white;
+        color: $primary;
+    }
 }

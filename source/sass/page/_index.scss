@@ -7,7 +7,16 @@
 }
 
 .hot{
+    .hot-border{
+        margin: 0 1px;
+        @include pad-Pro(){
+            margin: 0 0px;
+        }
+    }
     margin-top: -90px;
+    @include pad(){
+        margin-top: 0px;
+    }
     .hot-img{
         height: 256px;
     }
@@ -104,9 +113,9 @@
 
 .section-text{
     writing-mode: vertical-rl;
-    line-height:40px; 
+    line-height:30px; 
     @include pad-Pro(){
-        line-height: 30px;
+        line-height: 25px;
     }
     @include pad(){
         writing-mode: horizontal-tb;

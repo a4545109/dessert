@@ -67,7 +67,6 @@ $colors: map-merge(
 );
 
 $primary:       #3F5D45; //$blue !default;
-$heavyGreen2:   #3F5D45;
 $mediumGreen:   #8DA291;
 $lightGreen:    #EAF0ED;
 $secondary:     $gray-600 !default;
@@ -85,7 +84,6 @@ $theme-colors: map-merge(
     "primary":    $primary,
     "accent":     #FFE180,
     "heavyGreen1":  #2C4832,
-    "heavyGreen2":  #3F5D45,
     "mediumGreen": #8DA291,
     "lightGreen":  #EAF0ED,
     "white":      #fff,
@@ -824,7 +822,7 @@ $pagination-focus-box-shadow:       $input-btn-focus-box-shadow !default;
 $pagination-focus-outline:          0 !default;
 
 $pagination-hover-color:            $white;//$link-hover-color !default;
-$pagination-hover-bg:               $heavyGreen2;//$gray-200 !default;
+$pagination-hover-bg:               $primary;//$gray-200 !default;
 $pagination-hover-border-color:     $gray-300 !default;
 
 $pagination-active-color:           $component-active-color !default;

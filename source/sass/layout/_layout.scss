@@ -12,7 +12,7 @@ body{
 }
 
 .footer{
-    color: $heavyGreen2;
+    color: $primary;
     .goodday-img{
         @include pad(){
             display: none;
